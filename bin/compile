@@ -27,5 +27,7 @@ fi
 tasks=(`echo ${DEPLOY_TASKS}`)
 cd $build_dir
 for task in ${tasks[@]}; do
+  echo $task
+  rake -V -T
   rake $task
 done
