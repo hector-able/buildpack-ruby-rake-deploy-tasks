@@ -28,6 +28,6 @@ tasks=(`echo ${DEPLOY_TASKS}`)
 cd $build_dir
 for task in ${tasks[@]}; do
   echo $task
-  rake -V -T
+  node -v
   rake $task
 done
